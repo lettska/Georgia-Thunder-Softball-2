@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tryout Request - Georgia Thunder Softball</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="../images/logo_1.jpg" alt="Georgia Thunder Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="../teams.html">Teams</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../teams/8u.html">8U</a></li>
+                        <li><a href="../teams/10u.html">10U</a></li>
+                        <li><a href="../teams/12u.html">12U</a></li>
+                        <li><a href="../teams/14u.html">14U</a></li>
+                        <li><a href="../teams/16u.html">16U</a></li>
+                        <li><a href="../teams/18u.html">18U</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../join.html">Join Us</a>
+                    <ul class="dropdown-content">
+                        <li><a href="tryouts.html">Tryout Request</a></li>
+                        <li><a href="team.html">Georgia Thunder Team</a></li>
+                    </ul>
+                </li>
+                <li><a href="../donate.html">Donate/Sponsor</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../store.html">Team Store</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tryout-hero">
+            <div class="tryout-content">
+                <h1>Tryout Request</h1>
+                <p>Join Our Competitive Softball Program</p>
+            </div>
+        </section>
+
+        <section class="tryout-form-section">
+            <div class="container">
+                <div class="tryout-info">
+                    <h2>Upcoming Tryouts</h2>
+                    <div class="tryout-dates">
+                        <div class="tryout-date">
+                            <h3>Spring Tryouts</h3>
+                            <p>March 15, 2024</p>
+                            <p>2:00 PM - 5:00 PM</p>
+                            <p>Thunder Field Complex</p>
+                        </div>
+                        <div class="tryout-date">
+                            <h3>Summer Tryouts</h3>
+                            <p>June 1, 2024</p>
+                            <p>2:00 PM - 5:00 PM</p>
+                            <p>Thunder Field Complex</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="tryout-form" id="tryoutForm">
+                    <h2>Request Information</h2>
+                    <div class="form-group">
+                        <label for="playerName">Player's Name</label>
+                        <input type="text" id="playerName" name="playerName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" min="7" max="18" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="division">Desired Division</label>
+                        <select id="division" name="division" required>
+                            <option value="">Select Division</option>
+                            <option value="8u">8U</option>
+                            <option value="10u">10U</option>
+                            <option value="12u">12U</option>
+                            <option value="14u">14U</option>
+                            <option value="16u">16U</option>
+                            <option value="18u">18U</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Years of Experience</label>
+                        <input type="number" id="experience" name="experience" min="0" max="12" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="parentName">Parent/Guardian Name</label>
+                        <input type="text" id="parentName" name="parentName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Information</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Submit Request</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@georgiathunder.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../teams.html">Teams</a></li>
+                    <li><a href="../join.html">Join Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Georgia Thunder Softball. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/tryouts.js"></script>
+</body>
+</html> 

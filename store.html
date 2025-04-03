@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Store - Georgia Thunder Softball</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="images/logo_1.jpg" alt="Georgia Thunder Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="donate.html">Donate/Sponsor</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="store.html">Team Store</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="store-container">
+        <aside class="store-sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#all">All Products</a></li>
+                <li><a href="#jerseys">Jerseys</a></li>
+                <li><a href="#accessories">Accessories</a></li>
+                <li><a href="#fan-gear">Fan Gear</a></li>
+                <li><a href="#equipment">Equipment</a></li>
+            </ul>
+
+            <h3>Size</h3>
+            <div class="size-filters">
+                <label class="size-checkbox">
+                    <input type="checkbox" name="size" value="XS"> XS
+                </label>
+                <label class="size-checkbox">
+                    <input type="checkbox" name="size" value="S"> S
+                </label>
+                <label class="size-checkbox">
+                    <input type="checkbox" name="size" value="M"> M
+                </label>
+                <label class="size-checkbox">
+                    <input type="checkbox" name="size" value="L"> L
+                </label>
+                <label class="size-checkbox">
+                    <input type="checkbox" name="size" value="XL"> XL
+                </label>
+                <label class="size-checkbox">
+                    <input type="checkbox" name="size" value="XXL"> XXL
+                </label>
+            </div>
+
+            <h3>Price Range</h3>
+            <div class="price-range">
+                <input type="range" min="0" max="200" value="200">
+                <div class="price-values">
+                    <span>$0</span>
+                    <span>$200</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="store-main">
+            <div class="store-header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <button type="button"><i class="fas fa-search"></i></button>
+                </div>
+                <select class="sort-select">
+                    <option value="featured">Featured</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="newest">Newest</option>
+                </select>
+            </div>
+
+            <div class="products-grid">
+                <!-- Game Jersey -->
+                <div class="product-card">
+                    <img src="images/jersey.jpg" alt="Game Jersey" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Game Jersey</h3>
+                        <p class="product-price">$49.99</p>
+                        <div class="product-actions">
+                            <button class="quick-view-btn">Quick View</button>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Cap -->
+                <div class="product-card">
+                    <img src="images/cap.jpg" alt="Team Cap" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Team Cap</h3>
+                        <p class="product-price">$24.99</p>
+                        <div class="product-actions">
+                            <button class="quick-view-btn">Quick View</button>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fan T-Shirt -->
+                <div class="product-card">
+                    <img src="images/tshirt.jpg" alt="Fan T-Shirt" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Fan T-Shirt</h3>
+                        <p class="product-price">$29.99</p>
+                        <div class="product-actions">
+                            <button class="quick-view-btn">Quick View</button>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Bat -->
+                <div class="product-card">
+                    <img src="images/bat.jpg" alt="Team Bat" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Team Bat</h3>
+                        <p class="product-price">$199.99</p>
+                        <div class="product-actions">
+                            <button class="quick-view-btn">Quick View</button>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Thunder Field, Atlanta, GA 30301</p>
+                <p><i class="fas fa-phone"></i> (404) 555-0123</p>
+                <p><i class="fas fa-envelope"></i> info@georgiathunder.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="teams.html">Teams</a></li>
+                    <li><a href="join.html">Join Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Georgia Thunder Softball. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/store.js"></script>
+</body>
+</html> 
